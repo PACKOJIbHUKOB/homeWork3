@@ -63,15 +63,36 @@ public class Main {
         System.out.println("За 3 дня машина произвела " +botalsThreeDays + " штук бутылок");
         System.out.println("За месяц машина произвела " +botalsMonth + " штук бутылок");
     }
-
     private static void task5() {
-        System.out.println("задача 5");}
-
+        System.out.println("задача 5");
+        byte totalCanPaint = 120;
+        byte whitPaintOnClassroom = 2;
+        byte brownPaintOnClassroom = 4;
+        byte totalPaintOnCLassroom = (byte) (whitPaintOnClassroom + brownPaintOnClassroom);
+        byte totalClassroom = (byte) (totalCanPaint / totalPaintOnCLassroom);
+        byte totalWitePaint = (byte) (totalClassroom * whitPaintOnClassroom);
+        byte totalBrownPaint = (byte) (totalClassroom * brownPaintOnClassroom);
+        System.out.println("В школе, где " + totalClassroom + " классов, нужно " + totalWitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
+    }
     private static void task6() {
-        System.out.println("задача 6");}
-
+        System.out.println("задача 6");
+        byte bananWight = 80;
+        byte milkWight = 105;
+        byte iceCreamWight = 100;
+        byte rawEggWight = 70;
+        int totalBanansWight = bananWight * 5;
+        int totalMilkWight = milkWight * 2;
+        int totalIceCreamWight = iceCreamWight * 2;
+        int totalRawEggWight = rawEggWight * 4;
+        float totalWightGramm = totalBanansWight + totalMilkWight + totalIceCreamWight + totalRawEggWight;
+        float totalWightKilogramm = totalWightGramm / 1000;
+        System.out.println("вес завтрака спортсмена составил " + totalWightGramm + " грамм или " + totalWightKilogramm+" кг");
+    }
     private static void task7() {
-        System.out.println("задача 7");}
+        System.out.println("задача 7");
+
+
+    }
 
     private static void task8() {
         System.out.println("задача 8");}
