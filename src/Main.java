@@ -46,54 +46,79 @@ public class Main {
         byte studentLuda = 23;
         byte studentAnna = 27;
         byte studentKatya = 30;
-        byte totalstudents = (byte) (studentLuda + studentAnna + studentKatya);
-        byte paperStudent = (byte) (totalPaper / totalstudents);
+        byte totalStudents = (byte) (studentLuda + studentAnna + studentKatya);
+        byte paperStudent = (byte) (totalPaper / totalStudents);
         System.out.println("На каждого ученика расчитанно " + paperStudent);
     }
     private static void task4() {
         System.out.println("задача 4");
         byte machinePerformance = 16;
-        byte bottalsOneMinuts = (byte) (machinePerformance / 2);
-        short botals20Minuts = (short) (bottalsOneMinuts * 20);
-        short botalsDay = (short) (bottalsOneMinuts * 1440);
-        int botalsThreeDays = botalsDay * 3;
-        int botalsMonth = botalsDay * 30;
-        System.out.println("За 20 минут машина произвела " +botals20Minuts + " штук бутылок");
-        System.out.println("За день машина произвела " +botalsDay + " штук бутылок");
-        System.out.println("За 3 дня машина произвела " +botalsThreeDays + " штук бутылок");
-        System.out.println("За месяц машина произвела " +botalsMonth + " штук бутылок");
+        byte bottlesOneMints = (byte) (machinePerformance / 2);
+        short bottles20Mints = (short) (bottlesOneMints * 20);
+        short bottlesDay = (short) (bottlesOneMints * 1440);
+        int bottlesThreeDays = bottlesDay * 3;
+        int bottlesMonth = bottlesDay * 30;
+        System.out.println("За 20 минут машина произвела " +bottles20Mints + " штук бутылок");
+        System.out.println("За день машина произвела " +bottlesDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " +bottlesThreeDays + " штук бутылок");
+        System.out.println("За месяц машина произвела " +bottlesMonth + " штук бутылок");
     }
     private static void task5() {
         System.out.println("задача 5");
         byte totalCanPaint = 120;
         byte whitPaintOnClassroom = 2;
         byte brownPaintOnClassroom = 4;
-        byte totalPaintOnCLassroom = (byte) (whitPaintOnClassroom + brownPaintOnClassroom);
-        byte totalClassroom = (byte) (totalCanPaint / totalPaintOnCLassroom);
-        byte totalWitePaint = (byte) (totalClassroom * whitPaintOnClassroom);
+        byte totalPaintOnClassroom = (byte) (whitPaintOnClassroom + brownPaintOnClassroom);
+        byte totalClassroom = (byte) (totalCanPaint / totalPaintOnClassroom);
+        byte totalWhitePaint = (byte) (totalClassroom * whitPaintOnClassroom);
         byte totalBrownPaint = (byte) (totalClassroom * brownPaintOnClassroom);
-        System.out.println("В школе, где " + totalClassroom + " классов, нужно " + totalWitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
+        System.out.println("В школе, где " + totalClassroom + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
     }
     private static void task6() {
         System.out.println("задача 6");
-        byte bananWight = 80;
+        byte bananasWight = 80;
         byte milkWight = 105;
         byte iceCreamWight = 100;
         byte rawEggWight = 70;
-        int totalBanansWight = bananWight * 5;
+        int totalBananasWight = bananasWight * 5;
         int totalMilkWight = milkWight * 2;
         int totalIceCreamWight = iceCreamWight * 2;
         int totalRawEggWight = rawEggWight * 4;
-        float totalWightGramm = totalBanansWight + totalMilkWight + totalIceCreamWight + totalRawEggWight;
-        float totalWightKilogramm = totalWightGramm / 1000;
-        System.out.println("вес завтрака спортсмена составил " + totalWightGramm + " грамм или " + totalWightKilogramm+" кг");
+        float totalWightGram = totalBananasWight + totalMilkWight + totalIceCreamWight + totalRawEggWight;
+        float totalWightKilogram = totalWightGram / 1000;
+        System.out.println("вес завтрака спортсмена составил " + totalWightGram + " грамм или " + totalWightKilogram+" кг");
     }
     private static void task7() {
         System.out.println("задача 7");
-
-
+        byte needLoseWightKg = 7;
+        short minWeightInDay = 250;
+        short maxWeightInDay = 500;
+        int needLoseWightGram =needLoseWightKg * 1000;
+        int totalMaxDay = needLoseWightGram / minWeightInDay;
+        int totalMinDay = needLoseWightGram/maxWeightInDay;
+        int averageTotalDay = (totalMaxDay+totalMinDay)/2;
+        System.out.println("на похудение, если спортсмен будет терять каждый день по 250 грамм потребуеться "+totalMaxDay+" дней, а если по 500 грама " +totalMinDay+" дней, среднее количество дней "+averageTotalDay);
     }
-
     private static void task8() {
-        System.out.println("задача 8");}
+        System.out.println("задача 8");
+        int payMarry = 67760;
+        int payDen = 83690;
+        int payKris = 76230;
+        int payMarryYearOld = payMarry * 12;
+        int payDenYearOld = payDen * 12;
+        int payKrisYearOld = payKris * 12;
+        float newPayMarry = payMarry *0.10F + payMarry;
+        float newPayDen = payDen*0.10F+payDen;
+        float newPayKris = payKris*0.10F+payKris;
+        float newPayMarryYear =newPayMarry*12;
+        float newPayDenYear = newPayDen*12;
+        float newPayKrisYear =newPayKris*12;
+        float differencePayMarryYear = newPayMarryYear%payMarryYearOld;
+        float differencePayDenYear =newPayDenYear%payDenYearOld;
+        float differencePayKrisYear =newPayKrisYear%payKrisYearOld;
+
+        System.out.println("Маша теперь получает "+newPayMarry+" рублей. Годовой доход вырос на "+differencePayMarryYear+ " рублей");
+        System.out.println("Денис теперь получает "+newPayDen+" рублей. Годовой доход вырос на "+differencePayDenYear+ " рублей");
+        System.out.println("Кристина теперь получает "+newPayKris+" рублей. Годовой доход вырос на "+differencePayKrisYear+ " рублей");
+    }
 }
