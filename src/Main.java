@@ -1,5 +1,6 @@
 public class Main {
-    public static void main(String[] args) {   task1();
+    public static void main(String[] args) {
+        task1();
         task2();
         task3();
         task4();
@@ -20,12 +21,29 @@ public class Main {
         System.out.println("Значение переменной three с типом int равно " + three);
         System.out.println("Значение переменной four с типом long равно " + four);
         System.out.println("Значение переменной five с типом float равно " + five);
-        System.out.println("Значение переменной six с типом double равно " + six);}
+        System.out.println("Значение переменной six с типом double равно " + six);
+    }
     private static void task2() {
         System.out.println("задача 2");
+        float a = 27.12F;
+        long b = 987678965549L;
+        float c = 2.768F;
+        short d = 569;
+        short e = -159;
+        short i = 27897;
+        byte f = 67;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(i);
+        System.out.println(f);
     }
     private static void task3() {
-        System.out.println("задача 3");}
+        System.out.println("задача 3");
+
+    }
     private static void task4() {
         System.out.println("задача 4");}
 
