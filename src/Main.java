@@ -53,7 +53,8 @@ public class Main {
     private static void task4() {
         System.out.println("задача 4");
         byte machinePerformance = 16;
-        byte bottlesOneMints = (byte) (machinePerformance / 2);
+        byte mints = 2;
+        byte bottlesOneMints = (byte) (machinePerformance / mints);
         short bottles20Mints = (short) (bottlesOneMints * 20);
         short bottlesDay = (short) (bottlesOneMints * 1440);
         int bottlesThreeDays = bottlesDay * 3;
@@ -107,9 +108,10 @@ public class Main {
         int payMarryYearOld = payMarry * 12;
         int payDenYearOld = payDen * 12;
         int payKrisYearOld = payKris * 12;
-        float newPayMarry = payMarry *0.10F + payMarry;
-        float newPayDen = payDen*0.10F+payDen;
-        float newPayKris = payKris*0.10F+payKris;
+        float indecsProcent = 1.1F;
+        float newPayMarry = payMarry*indecsProcent;
+        float newPayDen = payDen*indecsProcent;
+        float newPayKris = payKris*indecsProcent;
         float newPayMarryYear =newPayMarry*12;
         float newPayDenYear = newPayDen*12;
         float newPayKrisYear =newPayKris*12;
