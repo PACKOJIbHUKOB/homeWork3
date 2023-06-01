@@ -42,10 +42,27 @@ public class Main {
     }
     private static void task3() {
         System.out.println("задача 3");
-
+        short totalPaper = 480;
+        byte studentLuda = 23;
+        byte studentAnna = 27;
+        byte studentKatya = 30;
+        byte totalstudents = (byte) (studentLuda + studentAnna + studentKatya);
+        byte paperStudent = (byte) (totalPaper / totalstudents);
+        System.out.println("На каждого ученика расчитанно " + paperStudent);
     }
     private static void task4() {
-        System.out.println("задача 4");}
+        System.out.println("задача 4");
+        byte machinePerformance = 16;
+        byte bottalsOneMinuts = (byte) (machinePerformance / 2);
+        short botals20Minuts = (short) (bottalsOneMinuts * 20);
+        short botalsDay = (short) (bottalsOneMinuts * 1440);
+        int botalsThreeDays = botalsDay * 3;
+        int botalsMonth = botalsDay * 30;
+        System.out.println("За 20 минут машина произвела " +botals20Minuts + " штук бутылок");
+        System.out.println("За день машина произвела " +botalsDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " +botalsThreeDays + " штук бутылок");
+        System.out.println("За месяц машина произвела " +botalsMonth + " штук бутылок");
+    }
 
     private static void task5() {
         System.out.println("задача 5");}
